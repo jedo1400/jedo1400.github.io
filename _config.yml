@@ -1,0 +1,23 @@
+title: "blog"
+# tagline: ""
+description: ""
+github_username: jedo1400
+baseurl: "/"
+url: "https://jedo1400.github.io"
+
+plugins:
+  - jemoji
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+sass:
+  style: compressed
+
+highlighter: rouge
+
+header_pages:
+  - about.md
+  - posts.md
+
+# set the size of the text to 'large' or 'small', default is small
+font-size: small
