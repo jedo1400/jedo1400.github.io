@@ -9,6 +9,19 @@ title: Posts
 
 - List Item One -->
 
+# 학습동아리
+<ul>
+    {% for post in site.posts %}
+        {% if post.path contains "dlc" %}
+            <li>
+            <a href="{{ post.url }}">{{ post.title }}</a> <div style="display:inline; color:#7b7b7b">{{ post.date }}</div>
+            </li>
+        {% endif %}
+    {% endfor %}
+</ul>
+
+---
+
 # 알고리즘
 <ul>
     {% for post in site.posts %}
@@ -32,4 +45,3 @@ title: Posts
         {% endif %}
     {% endfor %}
 </ul>
-

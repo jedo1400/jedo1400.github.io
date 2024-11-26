@@ -5,10 +5,16 @@ github_username: jedo1400
 baseurl: "/"
 url: "https://jedo1400.github.io"
 
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+
 plugins:
   - jemoji
   - jekyll-sitemap
-  - jekyll-seo-tag
+#  - jekyll-seo-tag
 
 sass:
   style: compressed
